@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script rel="stylesheet" href="assets/js/main.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid top_main ">
+    <div class="container-fluid ">
+      <div class="main_top">
+        <ul class="main_topul">
+          <li class="li_arrow">
+            <button type="button" class="btn li_button arrow" >Status 1<span class="span_icon"><i class="fa-solid fa-circle-check"></i></span></button>
+          </li>
+          <li class="li_arrow">
+            <i class="fa-solid fa-play" id="tri0"></i><button type="button" class="btn li_button arrows" >New<i  id="span_icon1" class="fa-solid fa-circle"></i></span></button>
+          </li>
+          <li class="li_arrow">
+            <i class="fa-solid fa-play" id="tri1"></i><button type="button" class="btn li_button arrow_white" >Working<span><i id="span_icons" class="fa-solid fa-circle"></i></span></button>
+          </li>
+          <li class="li_arrow">
+            <i class="fa-solid fa-play" id="tri"></i><button type="button" class="btn li_button arrow_white" >Nurturing<span><i id="span_icons" class="fa-solid fa-circle"></i></span></button>
+          </li>
+          <li class="li_arrow">
+            <i class="fa-solid fa-play" id="tri"></i><button type="button" class="btn li_button arrow_white" >Convert<span><i id="span_icons" class="fa-solid fa-circle"></i></span></button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="bottom_box">
+      <ul class="bottom_ul">
+        <li class="li_bottoms">ACTIVITY</li>
+        <li class="li_bottom">INFORMATION</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 col-md-9">
+        <div class="col_mainbox">
+          <div class="col_second">
+            <ul class="ul_mainfirst">
+              <li class="li_mainfirst">Log Calls</li>
+              <li class="li_mainfirsts">Tasks</li>
+              <li class="li_mainfirst">Event</li>
+              <li class="li_mainfirst">Make Note</li>
+              <li class="li_mainfirst">Add Attachment</li>
+              <li class="li_mainfirst">Activity Set</li>
+              <li class="li_mainfirst">Custom Field</li>
+
+            </ul>
+          </div>
+          <div class="main_fisrttop">
+            <div class="box_topmain">
+              <h4 class="mainheadding">New Task</h4>
+              <div class="mainbox_form">
+                <form>
+                 <div class="row">
+                  <div class="col-lg-6">
+                   
+                    <div class="form_box">
+                    <div class="col-secondbox">
+                      <div class="mb-3">
+                        <label for="disabledSelect" class="form-label ">Task Type<span style="color:red">*</span></label>
+                        <select id="select" class="form-select">
+                          <option></option>
+                          <option>To Do</option>
+                          <option>Search bar</option>
+                          <option>Nav Bar</option>
+                          <option>Home Page</option>
+                        </select>
+                      </div>
+                    </div>
+                    </div>
+
+                  </div>
+                  <div class="col-lg-6">
+                   <div class="form_box">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                      <input type="text" class="form-control" id="sample" >
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+
+                 <div class="row">
+                  <div class="col-lg-6">
+                   
+                    <div class="form_box">
+                    <div class="col-secondbox">
+                      <div class="mb-3">
+                        <label for="disabledSelect" class="form-label ">Assigned to<span style="color:red">*</span></label>
+                        <select id="assign" class="form-select">
+                          <option></option>
+                          <option>Charles Gomez</option>
+                          <option>Arun Varma</option>
+                          <option>Sri Vasantha</option>
+                          
+                        </select>
+                      </div>
+             
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Start Date</label>
+                            <input type="date" class="form-control" id="exampleFormControlInput1" >
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">End Date</label>
+                            <input type="date" class="form-control" id="exampleFormControlInput1" >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Remind on</label>
+                        <input type="date" class="form-control" id="exampleFormControlInput1" >
+                      </div>
+
+
+
+                    </div>
+
+                   
+                    </div>
+
+                  </div>
+                  <div class="col-lg-6">
+                   <div class="form_box">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Details</label>
+                      <textarea style="resize: none;" class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                    </div>
+                  
+                    <button type="reset" class="btn button_submit">Cancel</button>
+                    <button type="button" class="btn button_submits" onclick="AddRow()">Apply</button>
+                   </div>
+                  </div>
+                 </div>
+
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- table -->
+
+        <div class="table_box">
+          <h3 class="mainheadding">Task List</h3>
+          <table class="table table-bordered table_mainbox" id="show">
+            <thead>
+              <tr>
+                <!-- <th style="opacity: 0.5;" scope="col">#</th> -->
+                <th style="opacity: 0.5;" scope="col">Subject</th>
+                <th style="opacity: 0.5;" scope="col">Type</th>
+                <th style="opacity: 0.5;" scope="col">Assigned to</th>
+                <th style="opacity: 0.5;" scope="col">Due Date</th>
+                <th style="opacity: 0.5;" scope="col">Status  <i class="fa-solid fa-angle-down"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="opacity: 0.8;">
+                <!-- <th scope="row">1</th> -->
+                <td style="color: blue;">Sample</td>
+                <td>To Do</td>
+                <td>Ravi Kumar</td>
+                <td>13 Nov 2018</td>
+                <td>Not Started</td>
+              </tr>
+              <tr style="opacity: 0.8; background-color: rgb(243, 241, 241);">
+                <!-- <th scope="row">2</th> -->
+                <td style="color: blue;">Sample</td>
+                <td>To Do</td>
+                <td>Anand Pal</td>
+                <td>16 Nov 2018</td>
+                <td>Not Started</td>
+              </tr>
+              <tr style="opacity: 0.8;">
+                <!-- <th scope="row">3</th> -->
+                <td style="color: blue;">Sample</td>
+                <td>To Do</td>
+                <td>Jayaram Ramesh</td>
+                <td>12 Dec 2018</td>
+                <td>Not Started</td>
+              </tr>
+              <tr style="opacity: 0.8; background-color: rgb(243, 241, 241);">
+                <!-- <th scope="row">4</th> -->
+                <td style="color: blue;">Sample</td>
+                <td>To Do</td>
+                <td>Allan Gomez</td>
+                <td>20 Dec 2018</td>
+                <td>Not Started</td>
+              </tr>
+              <tr>
+               <td class="viewmore">View More <i class="fa-solid fa-angle-down"></i></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        
+
+      </div>
+      <div class="col-lg-4 col-md-3">
+        <div class="secondbox_main">
+          <!-- <div class="hor">
+            <h1></h1>
+          </div> -->
+
+        <div class="col-secondbox ">
+          <div class="mb-3">
+           <div class="row">
+            <div class="col-lg-11">
+              <input type="text" class="form-control" onkeyup="searchFilter()" id="filter" class="filter" 
+              placeholder="filter by date"/> 
+            </div>
+            <div class="col-lg-1 side_down">
+              <i id="side_icon1" class="fa-solid fa-angle-down"></i>
+            </div>
+           </div>
+            
+          </div>
+        </div>
+        <div id="card_list">
+          <div class="side_boxs">
+            <div class="row">
+              <div class="col-lg-3 col-sm-3 col-md-3 col-3">
+              <div class="icon_box">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-md-9 col-9 div1">
+              <!-- <div class="text_box"> -->
+                <h5 class="side_main">Informed product features</h5>
+                <p class="p_sidemain">You Contacted with <span style="color:#fc8607">Charles Gamez</span></p>
+                <p class="p_sidemain date">11 nov 2018 5:49am</p>
+                <i id="down_icon" class="fa-solid fa-angle-down"></i>
+              <!-- </div> -->
+  
+             
+  
+              </div>
+            </div>
+          </div>
+    <div class="line"></div>
+          <div class="side_boxs">
+            <div class="row">
+              <div class="col-lg-3 col-sm-3 col-md-3 col-3">
+              <div class="icon_box1">
+                <i class="fa-solid fa-check" id="check_icon"></i>
+              </div>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-md-9 col-9 div1">
+              <!-- <div class="text_box"> -->
+                <h5 class="side_main">Send Products Brochure</h5>
+                <p class="p_sidemain">You Added a To Do Task with <span style="color:#fc8607">Arun Var</span></p>
+                <p class="p_sidemain date">11 Nov 2018 6:49pm</p>
+                <i id="down_icon" class="fa-solid fa-angle-down"></i>
+              <!-- </div> -->
+  
+             
+  
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="side_boxs">
+            <div class="row">
+              <div class="col-lg-3 col-sm-3 col-md-3 col-3">
+              <div class="icon_box2">
+                <i class="fa-solid fa-book" id="book_icon"></i>
+              </div>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-md-9 col-9 div1">
+              <!-- <div class="text_box"> -->
+                <h5 class="side_main">Send  Product Brochure</h5>
+                <p class="p_sidemain">You Added a To Do Task with <span style="color:#fc8607">Arun Var</span></p>
+                <p class="p_sidemain date">10 Nov 2018 6:49Pm</p>
+                <i id="down_icon" class="fa-solid fa-angle-down"></i>
+              <!-- </div> -->
+  
+             
+  
+              </div>
+            </div>
+          </div>
+       
+          <div class="line"></div>
+          <div class="side_boxs">
+            <div class="row">
+              <div class="col-lg-3 col-sm-3 col-md-3 col-3">
+              <div class="icon_box">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-md-9 col-9 div1">
+              <!-- <div class="text_box"> -->
+                <h5 class="side_main">Informed product features</h5>
+                <p class="p_sidemain">You Contacted with <span style="color:#fc8607">Charles Gamez</span></p>
+                <p class="p_sidemain date">13 nov 2018 5:49am</p>
+                <i id="down_icon" class="fa-solid fa-angle-down"></i>
+              <!-- </div> -->
+  
+             
+  
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="side_boxs">
+            <div class="row">
+              <div class="col-lg-3 col-sm-3 col-md-3 col-3">
+              <div class="icon_box1">
+                <i class="fa-solid fa-check" id="check_icon"></i>
+              </div>
+              </div>
+              <div class="col-lg-9 col-sm-9 col-md-9 col-9 div1" >
+              <!-- <div class="text_box"> -->
+                <h5 class="side_main">Send Products Brochure</h5>
+                <p class="p_sidemain">You Added a To Do Task with <span style="color:#fc8607">Arun Var</span></p>
+                <p class="p_sidemain date">10 Nov 2018 6:49pm</p>
+                <i id="down_icon" class="fa-solid fa-angle-down"></i>
+              <!-- </div> -->
+  
+             
+  
+              </div>
+
+        </div>
+
+
+
+          </div>
+        </div>
+
+        
+
+     
+
+       
+           
+
+        </div>
+        </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+ 
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
